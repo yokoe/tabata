@@ -1,0 +1,6 @@
+framework module Tabata {
+  umbrella header "Tabata-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -5,9 +5,21 @@
 [![License](https://img.shields.io/cocoapods/l/Tabata.svg?style=flat)](http://cocoapods.org/pods/Tabata)
 [![Platform](https://img.shields.io/cocoapods/p/Tabata.svg?style=flat)](http://cocoapods.org/pods/Tabata)
 
+A lightweight CIFilter wrapper for Mac apps.
+
+Used in: [Lapsodi](http://en.nantekottai.com/2016/05/25/lapsodi-time-lapse-stop-motion/) Time-Lapse app.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+```
+let sourceImage = NSImage(...)
+let image = Tabata(image: sourceImage)
+                .brightness(brightness, andContrast: contrast)
+                .hue(hue)
+                .output # returns NSImage.
+```
 
 ## Requirements
 
@@ -22,7 +34,7 @@ pod "Tabata"
 
 ## Author
 
-SotaYokoe, kreuz45@kreuz45.com
+SotaYokoe, info@kreuz45.com
 
 ## License
 
