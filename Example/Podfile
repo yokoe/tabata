@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Tabata_Tests' do
+  pod 'Tabata', :path => '../'
+  
+  
+end
