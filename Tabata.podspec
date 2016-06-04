@@ -29,7 +29,7 @@ Automatically skips filters which have no effect in specified params.
   s.source           = { :git => 'https://github.com/yokoe/tabata.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/kreuz45'
 
-  s.osx.deployment_target = '10.9'
+  s.osx.deployment_target = '10.10'
 
   s.source_files = 'Tabata/Classes/*.swift'
   
