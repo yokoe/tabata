@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		678A2C0DEF90023E88E8921FCFFA0E93 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3E870F5D8A2DBAD9EB314BBA476DF /* ReplaceMe.swift */; };
+		2BC5EC891D0435110005AD07 /* ColorControlsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5EC851D0435110005AD07 /* ColorControlsOperation.swift */; };
+		2BC5EC8A1D0435110005AD07 /* HueOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5EC861D0435110005AD07 /* HueOperation.swift */; };
+		2BC5EC8B1D0435110005AD07 /* ImageProcessOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5EC871D0435110005AD07 /* ImageProcessOperation.swift */; };
+		2BC5EC8C1D0435110005AD07 /* Tabata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5EC881D0435110005AD07 /* Tabata.swift */; };
 		7934029AB8A8D7B1288D0545D771A380 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		997D10B2FA40DF6FDFB6BCB3D474248E /* Tabata-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A5B0C093E2CB37FD01C5410E86CD44 /* Tabata-dummy.m */; };
 		AF30E8D420EA94227557885FCFF59790 /* Pods-Tabata_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3CA34E87115CEA1537D3D61262045 /* Pods-Tabata_Tests-dummy.m */; };
@@ -30,11 +33,14 @@
 		00E254A77C6232D045C9E84740EB5FDF /* Pods-Tabata_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Tabata_Tests.modulemap"; sourceTree = "<group>"; };
 		09AC1B2EB8BF76E62F484B362BB4BDAC /* Tabata-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tabata-prefix.pch"; sourceTree = "<group>"; };
 		18D3CA34E87115CEA1537D3D61262045 /* Pods-Tabata_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tabata_Tests-dummy.m"; sourceTree = "<group>"; };
-		1ED3E870F5D8A2DBAD9EB314BBA476DF /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		276B21FA88CE0FF6583CCE87554FFE50 /* Tabata-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tabata-umbrella.h"; sourceTree = "<group>"; };
 		27A5B0C093E2CB37FD01C5410E86CD44 /* Tabata-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Tabata-dummy.m"; sourceTree = "<group>"; };
 		2A913A6DE4BF6D0D174BC67E910C8F20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B0C208FBBBC7CD64EBD9F13143EE7B9 /* Pods-Tabata_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tabata_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2BC5EC851D0435110005AD07 /* ColorControlsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorControlsOperation.swift; sourceTree = "<group>"; };
+		2BC5EC861D0435110005AD07 /* HueOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueOperation.swift; sourceTree = "<group>"; };
+		2BC5EC871D0435110005AD07 /* ImageProcessOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessOperation.swift; sourceTree = "<group>"; };
+		2BC5EC881D0435110005AD07 /* Tabata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabata.swift; sourceTree = "<group>"; };
 		4B12C9973A55F02A3044544A5ECEA171 /* Pods-Tabata_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tabata_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		4ECF8391F7CB1430F578FA1DD0918F31 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64CD947BED6E8327DE5899377CCEB9E1 /* Tabata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tabata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +146,10 @@
 		8E2764CDD0B3F4114CE9E6C2B3D18326 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1ED3E870F5D8A2DBAD9EB314BBA476DF /* ReplaceMe.swift */,
+				2BC5EC851D0435110005AD07 /* ColorControlsOperation.swift */,
+				2BC5EC861D0435110005AD07 /* HueOperation.swift */,
+				2BC5EC871D0435110005AD07 /* ImageProcessOperation.swift */,
+				2BC5EC881D0435110005AD07 /* Tabata.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -269,6 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC5EC8A1D0435110005AD07 /* HueOperation.swift in Sources */,
+				2BC5EC8B1D0435110005AD07 /* ImageProcessOperation.swift in Sources */,
+				2BC5EC8C1D0435110005AD07 /* Tabata.swift in Sources */,
+				2BC5EC891D0435110005AD07 /* ColorControlsOperation.swift in Sources */,
 				AF30E8D420EA94227557885FCFF59790 /* Pods-Tabata_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				678A2C0DEF90023E88E8921FCFFA0E93 /* ReplaceMe.swift in Sources */,
 				997D10B2FA40DF6FDFB6BCB3D474248E /* Tabata-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A82817D6288D9255506EB8DCA054843C /* Pods-Tabata_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -399,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8926A20B897BAEBDF3A215F1AD7A44E2 /* Pods-Tabata_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;

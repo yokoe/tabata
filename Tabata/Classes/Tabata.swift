@@ -9,8 +9,8 @@ public class Tabata {
         self.image = image
     }
     
-    public func brightness(brightness: Float?, andContrast contrast: Float?) -> Tabata {
-        if let operation = BrightnessAndContrastOperation(brightness: brightness, contrast: contrast) {
+    public func brightness(brightness: Float?, saturation: Float?, andContrast contrast: Float?) -> Tabata {
+        if let operation = ColorControlsOperation(brightness: brightness, saturation: saturation, contrast: contrast) {
             operations.append(operation)
         }
         return self
