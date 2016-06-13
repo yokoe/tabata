@@ -23,6 +23,13 @@ public class Tabata {
         return self
     }
     
+    public func gaussianBlur(radius: Float?) -> Tabata {
+        if let radius = radius {
+            operations.append(GaussianBlurOperation(radius: radius))
+        }
+        return self
+    }
+    
     public var output: NSImage {
         if operations.count == 0 {
             return image

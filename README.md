@@ -16,9 +16,24 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ```
 let sourceImage = NSImage(...)
 let image = Tabata(image: sourceImage)
-                .brightness(brightness, andContrast: contrast)
+                .brightness(brightness, saturation: saturation, andContrast: contrast)
                 .hue(hue)
                 .output # returns NSImage.
+```
+
+## Filters
+### Brightness, contrast and saturation
+```
+Tabata(image: sourceImage).brightness(brightness, saturation: saturation, andContrast: contrast)
+```
+### Hue
+```
+Tabata(image: sourceImage).hue(1.57)
+```
+### Gaussian blur
+
+```
+Tabata(image: sourceImage).gaussianBlur(10)
 ```
 
 ## Requirements
