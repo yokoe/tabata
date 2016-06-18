@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		191915291D0EEEAE009E749C /* GaussianBlurOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191915271D0EEE37009E749C /* GaussianBlurOperation.swift */; };
+		194E28401D10426300CBFAF9 /* TiltShiftOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E283F1D10426300CBFAF9 /* TiltShiftOperation.swift */; };
 		2BC5EC891D0435110005AD07 /* ColorControlsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5EC851D0435110005AD07 /* ColorControlsOperation.swift */; };
 		2BC5EC8A1D0435110005AD07 /* HueOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5EC861D0435110005AD07 /* HueOperation.swift */; };
 		2BC5EC8B1D0435110005AD07 /* ImageProcessOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5EC871D0435110005AD07 /* ImageProcessOperation.swift */; };
@@ -35,6 +36,7 @@
 		09AC1B2EB8BF76E62F484B362BB4BDAC /* Tabata-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tabata-prefix.pch"; sourceTree = "<group>"; };
 		18D3CA34E87115CEA1537D3D61262045 /* Pods-Tabata_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tabata_Tests-dummy.m"; sourceTree = "<group>"; };
 		191915271D0EEE37009E749C /* GaussianBlurOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaussianBlurOperation.swift; sourceTree = "<group>"; };
+		194E283F1D10426300CBFAF9 /* TiltShiftOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiltShiftOperation.swift; sourceTree = "<group>"; };
 		276B21FA88CE0FF6583CCE87554FFE50 /* Tabata-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tabata-umbrella.h"; sourceTree = "<group>"; };
 		27A5B0C093E2CB37FD01C5410E86CD44 /* Tabata-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Tabata-dummy.m"; sourceTree = "<group>"; };
 		2A913A6DE4BF6D0D174BC67E910C8F20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				2BC5EC871D0435110005AD07 /* ImageProcessOperation.swift */,
 				2BC5EC881D0435110005AD07 /* Tabata.swift */,
 				191915271D0EEE37009E749C /* GaussianBlurOperation.swift */,
+				194E283F1D10426300CBFAF9 /* TiltShiftOperation.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				2BC5EC8A1D0435110005AD07 /* HueOperation.swift in Sources */,
 				2BC5EC8B1D0435110005AD07 /* ImageProcessOperation.swift in Sources */,
+				194E28401D10426300CBFAF9 /* TiltShiftOperation.swift in Sources */,
 				2BC5EC8C1D0435110005AD07 /* Tabata.swift in Sources */,
 				191915291D0EEEAE009E749C /* GaussianBlurOperation.swift in Sources */,
 				2BC5EC891D0435110005AD07 /* ColorControlsOperation.swift in Sources */,

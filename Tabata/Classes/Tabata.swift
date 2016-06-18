@@ -30,6 +30,13 @@ public class Tabata {
         return self
     }
     
+    public func tiltShift(radius: Float?) -> Tabata {
+        if let radius = radius {
+            operations.append(TiltShiftOperation(radius: radius))
+        }
+        return self
+    }
+    
     public var output: NSImage {
         if operations.count == 0 {
             return image
