@@ -16,6 +16,13 @@ public class Tabata {
         return self
     }
     
+    public func exposure(ev: Float?) -> Tabata {
+        if let ev = ev {
+            operations.append(ExposureOperation(ev: ev))
+        }
+        return self
+    }
+    
     public func hue(hue: Float?) -> Tabata {
         if let hue = hue, operation = HueOperation(hue: hue) {
             operations.append(operation)
