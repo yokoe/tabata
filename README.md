@@ -26,6 +26,12 @@ let image = Tabata(image: sourceImage)
 ```
 Tabata(image: sourceImage).brightness(brightness, saturation: saturation, andContrast: contrast)
 ```
+
+### Exposure
+```
+Tabata(image: sourceImage).exposure(0.5)
+```
+
 ### Hue
 ```
 Tabata(image: sourceImage).hue(1.57)
@@ -34,6 +40,10 @@ Tabata(image: sourceImage).hue(1.57)
 
 ```
 Tabata(image: sourceImage).gaussianBlur(10)
+```
+### Tilt-Shift
+```
+Tabata(image: sourceImage).tiltShift(4)
 ```
 
 ## Requirements
