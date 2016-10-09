@@ -10,7 +10,7 @@ class TiltShiftOperation {
 }
 
 extension TiltShiftOperation: ImageProcessOperation {
-    func process(image: CIImage) -> CIImage {
+    func process(_ image: CIImage) -> CIImage {
         let blurImage = GaussianBlurOperation(radius: radius).process(image)
         
         guard let filter = CIFilter(name: "CIBlendWithMask") else {
@@ -35,7 +35,7 @@ extension TiltShiftOperation: ImageProcessOperation {
         return outputImage
     }
     
-    private func greenGradientImageInRect(rect: CGRect, point0: CIVector, point1: CIVector) -> CIImage? {
+    fileprivate func greenGradientImageInRect(_ rect: CGRect, point0: CIVector, point1: CIVector) -> CIImage? {
         guard let gradientFilter = CIFilter(name: "CILinearGradient") else {
             print("Failed to instantiate filter CILinearGradient")
             return nil
@@ -56,7 +56,7 @@ extension TiltShiftOperation: ImageProcessOperation {
         }
         
         cropFilter.setValue(gradientImage, forKey: kCIInputImageKey)
-        cropFilter.setValue(CIVector(CGRect: rect), forKey: "inputRectangle")
+        cropFilter.setValue(CIVector(cgRect: rect), forKey: "inputRectangle")
         
         guard let outputImage = cropFilter.outputImage else {
             print("CICrop filter output error.")
@@ -66,8 +66,8 @@ extension TiltShiftOperation: ImageProcessOperation {
         return outputImage
     }
     
-    private func maskImage(rect: CGRect) -> CIImage? {
-        let height = CGRectGetHeight(rect)
+    fileprivate func maskImage(_ rect: CGRect) -> CIImage? {
+        let height = rect.height
         
         guard let filter = CIFilter(name: "CIAdditionCompositing") else {
             print("Failed to instantiate filter CIAdditionCompositing")

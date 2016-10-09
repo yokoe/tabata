@@ -1,50 +1,50 @@
 import Cocoa
 
-public class Tabata {
-    private var image: NSImage
+open class Tabata {
+    fileprivate var image: NSImage
     
-    private var operations = [ImageProcessOperation]()
+    fileprivate var operations = [ImageProcessOperation]()
     
     public init(image: NSImage) {
         self.image = image
     }
     
-    public func brightness(brightness: Float?, saturation: Float?, andContrast contrast: Float?) -> Tabata {
+    open func brightness(_ brightness: Float?, saturation: Float?, andContrast contrast: Float?) -> Tabata {
         if let operation = ColorControlsOperation(brightness: brightness, saturation: saturation, contrast: contrast) {
             operations.append(operation)
         }
         return self
     }
     
-    public func exposure(ev: Float?) -> Tabata {
+    open func exposure(_ ev: Float?) -> Tabata {
         if let ev = ev {
             operations.append(ExposureOperation(ev: ev))
         }
         return self
     }
     
-    public func hue(hue: Float?) -> Tabata {
-        if let hue = hue, operation = HueOperation(hue: hue) {
+    open func hue(_ hue: Float?) -> Tabata {
+        if let hue = hue, let operation = HueOperation(hue: hue) {
             operations.append(operation)
         }
         return self
     }
     
-    public func gaussianBlur(radius: Float?) -> Tabata {
+    open func gaussianBlur(_ radius: Float?) -> Tabata {
         if let radius = radius {
             operations.append(GaussianBlurOperation(radius: radius))
         }
         return self
     }
     
-    public func tiltShift(radius: Float?) -> Tabata {
+    open func tiltShift(_ radius: Float?) -> Tabata {
         if let radius = radius {
             operations.append(TiltShiftOperation(radius: radius))
         }
         return self
     }
     
-    public var output: NSImage {
+    open var output: NSImage {
         if operations.count == 0 {
             return image
         }
@@ -59,14 +59,14 @@ public class Tabata {
             intermediate = operation.process(intermediate)
         }
         
-        let rep = NSCIImageRep(CIImage: intermediate)
+        let rep = NSCIImageRep(ciImage: intermediate)
         let nsImage = NSImage(size: rep.size)
         nsImage.addRepresentation(rep)
         return nsImage
     }
     
-    private var CIImageObject: CIImage? {
-        if let tiffRep = image.TIFFRepresentation, bitmapImageRep = NSBitmapImageRep(data: tiffRep) {
+    fileprivate var CIImageObject: CIImage? {
+        if let tiffRep = image.tiffRepresentation, let bitmapImageRep = NSBitmapImageRep(data: tiffRep) {
             return CIImage(bitmapImageRep: bitmapImageRep)
         }
         return nil

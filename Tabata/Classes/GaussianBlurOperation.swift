@@ -10,7 +10,7 @@ class GaussianBlurOperation {
 }
 
 extension GaussianBlurOperation: ImageProcessOperation {
-    func process(image: CIImage) -> CIImage {
+    func process(_ image: CIImage) -> CIImage {
         guard let blurFilter = CIFilter(name: "CIGaussianBlur") else {
             print("Failed to instantiate filter")
             return image

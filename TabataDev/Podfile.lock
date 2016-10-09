@@ -1,0 +1,16 @@
+PODS:
+  - Tabata (0.0.6)
+
+DEPENDENCIES:
+  - Tabata (from `../`)
+
+EXTERNAL SOURCES:
+  Tabata:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Tabata: 241bea81b0cb053e86ac2b7dba6ccaa0fd608b5b
+
+PODFILE CHECKSUM: 097e1d30d913159f74e1d2c7b01385953e98f4a6
+
+COCOAPODS: 1.1.0.rc.2

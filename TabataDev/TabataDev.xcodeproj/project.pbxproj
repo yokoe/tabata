@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19D493E81DAA8379005A0DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D493E71DAA8379005A0DD9 /* AppDelegate.swift */; };
+		19D493EA1DAA8379005A0DD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D493E91DAA8379005A0DD9 /* ViewController.swift */; };
+		19D493EC1DAA8379005A0DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D493EB1DAA8379005A0DD9 /* Assets.xcassets */; };
+		19D493EF1DAA8379005A0DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D493ED1DAA8379005A0DD9 /* Main.storyboard */; };
+		19D493FA1DAA8379005A0DD9 /* TabataDevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D493F91DAA8379005A0DD9 /* TabataDevTests.swift */; };
+		53E58D3A81E386FFD24B4004 /* Pods_TabataDevTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B89547D8074ED80C1C13B8 /* Pods_TabataDevTests.framework */; };
+		FA8D122286317D5277DE9DEC /* Pods_TabataDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A6553561F905F85E4E7092 /* Pods_TabataDev.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19D493F61DAA8379005A0DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D493DC1DAA8379005A0DD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19D493E31DAA8379005A0DD9;
+			remoteInfo = TabataDev;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19D493E41DAA8379005A0DD9 /* TabataDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabataDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D493E71DAA8379005A0DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19D493E91DAA8379005A0DD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19D493EB1DAA8379005A0DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19D493EE1DAA8379005A0DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19D493F01DAA8379005A0DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D493F51DAA8379005A0DD9 /* TabataDevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabataDevTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D493F91DAA8379005A0DD9 /* TabataDevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabataDevTests.swift; sourceTree = "<group>"; };
+		19D493FB1DAA8379005A0DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D494041DAA840F005A0DD9 /* Tabata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tabata; path = ../Tabata; sourceTree = "<group>"; };
+		23A6553561F905F85E4E7092 /* Pods_TabataDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabataDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47B89547D8074ED80C1C13B8 /* Pods_TabataDevTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabataDevTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9604DE75995E1DA321A3FA /* Pods-TabataDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabataDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabataDev/Pods-TabataDev.debug.xcconfig"; sourceTree = "<group>"; };
+		7EE2103E25FF91B147312FF7 /* Pods-TabataDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabataDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabataDev/Pods-TabataDev.release.xcconfig"; sourceTree = "<group>"; };
+		96B6E338783525559614E16B /* Pods-TabataDevTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabataDevTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabataDevTests/Pods-TabataDevTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6D992D2293451C3B2F99450 /* Pods-TabataDevTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabataDevTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabataDevTests/Pods-TabataDevTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19D493E11DAA8379005A0DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8D122286317D5277DE9DEC /* Pods_TabataDev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D493F21DAA8379005A0DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E58D3A81E386FFD24B4004 /* Pods_TabataDevTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19D493DB1DAA8379005A0DD9 = {
+			isa = PBXGroup;
+			children = (
+				19D494041DAA840F005A0DD9 /* Tabata */,
+				19D493E61DAA8379005A0DD9 /* TabataDev */,
+				19D493F81DAA8379005A0DD9 /* TabataDevTests */,
+				19D493E51DAA8379005A0DD9 /* Products */,
+				D6266F7ACE8926D3A314A1AE /* Pods */,
+				9D0A2E24F70AB1DFBC48F32C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19D493E51DAA8379005A0DD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D493E41DAA8379005A0DD9 /* TabataDev.app */,
+				19D493F51DAA8379005A0DD9 /* TabataDevTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19D493E61DAA8379005A0DD9 /* TabataDev */ = {
+			isa = PBXGroup;
+			children = (
+				19D493E71DAA8379005A0DD9 /* AppDelegate.swift */,
+				19D493E91DAA8379005A0DD9 /* ViewController.swift */,
+				19D493EB1DAA8379005A0DD9 /* Assets.xcassets */,
+				19D493ED1DAA8379005A0DD9 /* Main.storyboard */,
+				19D493F01DAA8379005A0DD9 /* Info.plist */,
+			);
+			path = TabataDev;
+			sourceTree = "<group>";
+		};
+		19D493F81DAA8379005A0DD9 /* TabataDevTests */ = {
+			isa = PBXGroup;
+			children = (
+				19D493F91DAA8379005A0DD9 /* TabataDevTests.swift */,
+				19D493FB1DAA8379005A0DD9 /* Info.plist */,
+			);
+			path = TabataDevTests;
+			sourceTree = "<group>";
+		};
+		9D0A2E24F70AB1DFBC48F32C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23A6553561F905F85E4E7092 /* Pods_TabataDev.framework */,
+				47B89547D8074ED80C1C13B8 /* Pods_TabataDevTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6266F7ACE8926D3A314A1AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F9604DE75995E1DA321A3FA /* Pods-TabataDev.debug.xcconfig */,
+				7EE2103E25FF91B147312FF7 /* Pods-TabataDev.release.xcconfig */,
+				D6D992D2293451C3B2F99450 /* Pods-TabataDevTests.debug.xcconfig */,
+				96B6E338783525559614E16B /* Pods-TabataDevTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19D493E31DAA8379005A0DD9 /* TabataDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D493FE1DAA8379005A0DD9 /* Build configuration list for PBXNativeTarget "TabataDev" */;
+			buildPhases = (
+				7AB137152CC5C81C79E9C698 /* [CP] Check Pods Manifest.lock */,
+				19D493E01DAA8379005A0DD9 /* Sources */,
+				19D493E11DAA8379005A0DD9 /* Frameworks */,
+				19D493E21DAA8379005A0DD9 /* Resources */,
+				82D66DFFAECE30C34CDC6469 /* [CP] Embed Pods Frameworks */,
+				2F39B91831F3149FB6554C75 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabataDev;
+			productName = TabataDev;
+			productReference = 19D493E41DAA8379005A0DD9 /* TabataDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19D493F41DAA8379005A0DD9 /* TabataDevTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D494011DAA8379005A0DD9 /* Build configuration list for PBXNativeTarget "TabataDevTests" */;
+			buildPhases = (
+				DBB7F6972BF681E0EFAB27A2 /* [CP] Check Pods Manifest.lock */,
+				19D493F11DAA8379005A0DD9 /* Sources */,
+				19D493F21DAA8379005A0DD9 /* Frameworks */,
+				19D493F31DAA8379005A0DD9 /* Resources */,
+				7F040F490E03497DE9BFF12D /* [CP] Embed Pods Frameworks */,
+				85D56E6FE4A4E14DBF85E54D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19D493F71DAA8379005A0DD9 /* PBXTargetDependency */,
+			);
+			name = TabataDevTests;
+			productName = TabataDevTests;
+			productReference = 19D493F51DAA8379005A0DD9 /* TabataDevTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19D493DC1DAA8379005A0DD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Sota Yokoe";
+				TargetAttributes = {
+					19D493E31DAA8379005A0DD9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4D3WCELAM5;
+						ProvisioningStyle = Automatic;
+					};
+					19D493F41DAA8379005A0DD9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4D3WCELAM5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 19D493E31DAA8379005A0DD9;
+					};
+				};
+			};
+			buildConfigurationList = 19D493DF1DAA8379005A0DD9 /* Build configuration list for PBXProject "TabataDev" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19D493DB1DAA8379005A0DD9;
+			productRefGroup = 19D493E51DAA8379005A0DD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19D493E31DAA8379005A0DD9 /* TabataDev */,
+				19D493F41DAA8379005A0DD9 /* TabataDevTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19D493E21DAA8379005A0DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D493EC1DAA8379005A0DD9 /* Assets.xcassets in Resources */,
+				19D493EF1DAA8379005A0DD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D493F31DAA8379005A0DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F39B91831F3149FB6554C75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabataDev/Pods-TabataDev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AB137152CC5C81C79E9C698 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F040F490E03497DE9BFF12D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabataDevTests/Pods-TabataDevTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82D66DFFAECE30C34CDC6469 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabataDev/Pods-TabataDev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85D56E6FE4A4E14DBF85E54D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabataDevTests/Pods-TabataDevTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBB7F6972BF681E0EFAB27A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19D493E01DAA8379005A0DD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D493EA1DAA8379005A0DD9 /* ViewController.swift in Sources */,
+				19D493E81DAA8379005A0DD9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D493F11DAA8379005A0DD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D493FA1DAA8379005A0DD9 /* TabataDevTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19D493F71DAA8379005A0DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19D493E31DAA8379005A0DD9 /* TabataDev */;
+			targetProxy = 19D493F61DAA8379005A0DD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19D493ED1DAA8379005A0DD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19D493EE1DAA8379005A0DD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19D493FC1DAA8379005A0DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19D493FD1DAA8379005A0DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		19D493FF1DAA8379005A0DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F9604DE75995E1DA321A3FA /* Pods-TabataDev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4D3WCELAM5;
+				INFOPLIST_FILE = TabataDev/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreuz45.TabataDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		19D494001DAA8379005A0DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EE2103E25FF91B147312FF7 /* Pods-TabataDev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4D3WCELAM5;
+				INFOPLIST_FILE = TabataDev/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreuz45.TabataDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		19D494021DAA8379005A0DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D992D2293451C3B2F99450 /* Pods-TabataDevTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4D3WCELAM5;
+				INFOPLIST_FILE = TabataDevTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreuz45.TabataDevTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabataDev.app/Contents/MacOS/TabataDev";
+			};
+			name = Debug;
+		};
+		19D494031DAA8379005A0DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96B6E338783525559614E16B /* Pods-TabataDevTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4D3WCELAM5;
+				INFOPLIST_FILE = TabataDevTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreuz45.TabataDevTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabataDev.app/Contents/MacOS/TabataDev";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19D493DF1DAA8379005A0DD9 /* Build configuration list for PBXProject "TabataDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D493FC1DAA8379005A0DD9 /* Debug */,
+				19D493FD1DAA8379005A0DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D493FE1DAA8379005A0DD9 /* Build configuration list for PBXNativeTarget "TabataDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D493FF1DAA8379005A0DD9 /* Debug */,
+				19D494001DAA8379005A0DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D494011DAA8379005A0DD9 /* Build configuration list for PBXNativeTarget "TabataDevTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D494021DAA8379005A0DD9 /* Debug */,
+				19D494031DAA8379005A0DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19D493DC1DAA8379005A0DD9 /* Project object */;
+}

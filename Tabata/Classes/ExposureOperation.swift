@@ -9,7 +9,7 @@ class ExposureOperation {
 }
 
 extension ExposureOperation: ImageProcessOperation {
-    func process(image: CIImage) -> CIImage {
+    func process(_ image: CIImage) -> CIImage {
         guard let filter = CIFilter(name: "CIExposureAdjust") else {
             print("Failed to instantiate filter")
             return image

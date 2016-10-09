@@ -14,7 +14,7 @@ class HueOperation {
 }
 
 extension HueOperation: ImageProcessOperation {
-    func process(image: CIImage) -> CIImage {
+    func process(_ image: CIImage) -> CIImage {
         guard let colorFilter = CIFilter(name: "CIHueAdjust") else {
             print("Failed to instantiate color filter")
             return image
