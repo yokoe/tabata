@@ -7,13 +7,17 @@
 //
 
 import Cocoa
+import Tabata
 
 class ViewController: NSViewController {
+    @IBOutlet weak var imageView: NSImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        imageView.image = Tabata().exposure(1).process(image: NSImage(named: "Kyoto")!)
     }
 
     override var representedObject: Any? {

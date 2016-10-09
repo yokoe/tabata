@@ -1,13 +1,9 @@
 import Cocoa
 
 open class Tabata {
-    fileprivate var image: NSImage
-    
     fileprivate var operations = [ImageProcessOperation]()
     
-    public init(image: NSImage) {
-        self.image = image
-    }
+    public init() {}
     
     open func brightness(_ brightness: Float?, saturation: Float?, andContrast contrast: Float?) -> Tabata {
         if let operation = ColorControlsOperation(brightness: brightness, saturation: saturation, contrast: contrast) {
@@ -44,17 +40,17 @@ open class Tabata {
         return self
     }
     
-    open var output: NSImage {
+    open func process(image: NSImage) -> NSImage {
         if operations.count == 0 {
             return image
         }
         
-        guard let ciimage = CIImageObject else {
-            print("Failed to create CIImage from image. ", image)
+        guard let tiffRep = image.tiffRepresentation, let bitmapImageRep = NSBitmapImageRep(data: tiffRep), let ciImage = CIImage(bitmapImageRep: bitmapImageRep) else {
+            debugPrint("Failed to create ciImage from input.")
             return image
         }
         
-        var intermediate = ciimage
+        var intermediate = ciImage
         for operation in operations {
             intermediate = operation.process(intermediate)
         }
@@ -63,12 +59,5 @@ open class Tabata {
         let nsImage = NSImage(size: rep.size)
         nsImage.addRepresentation(rep)
         return nsImage
-    }
-    
-    fileprivate var CIImageObject: CIImage? {
-        if let tiffRep = image.tiffRepresentation, let bitmapImageRep = NSBitmapImageRep(data: tiffRep) {
-            return CIImage(bitmapImageRep: bitmapImageRep)
-        }
-        return nil
     }
 }
