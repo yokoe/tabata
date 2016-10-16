@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02BCF6339FD5DD2BDD454549E6430E77 /* Pods-TabataDev-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA095DB662D0338E094534FAF5D337 /* Pods-TabataDev-dummy.m */; };
+		195A4C291DB35ACF009CBD04 /* ScaleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A4C271DB35AA9009CBD04 /* ScaleOperation.swift */; };
 		220675A2CCECFE5A4C5F64D0655EFAED /* Tabata-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 240DD0E8ADB604034D021BA2086CA19F /* Tabata-dummy.m */; };
 		2A9057543C4A20D2C6A19328E1B18D6B /* HueOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D568220BCB3842438CB13F35CA294B8 /* HueOperation.swift */; };
 		418654E1219B24CF8DBB0335B687EC47 /* ColorControlsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C977DFDA0435DACD48A1404D54D6187 /* ColorControlsOperation.swift */; };
@@ -43,6 +44,7 @@
 		0E006DC304CB9FD16BA74C2167DD3BCC /* Pods-TabataDevTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TabataDevTests-frameworks.sh"; sourceTree = "<group>"; };
 		12B58F64C6800AC74BC6728EA12BC581 /* Pods_TabataDevTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabataDevTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AEAEDDB441EA1C96DC274218F77418 /* Pods-TabataDev-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TabataDev-frameworks.sh"; sourceTree = "<group>"; };
+		195A4C271DB35AA9009CBD04 /* ScaleOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleOperation.swift; sourceTree = "<group>"; };
 		1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		1F2F00A88489C48FD68CF72C91A9665C /* Pods-TabataDevTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TabataDevTests.modulemap"; sourceTree = "<group>"; };
 		21A6FF96CC41C02509839F68F4A0F16A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		F4AA5817D1698837A6071F31C31627F0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				195A4C271DB35AA9009CBD04 /* ScaleOperation.swift */,
 				9C977DFDA0435DACD48A1404D54D6187 /* ColorControlsOperation.swift */,
 				51692ED52D151BFEB1E0211EBA972476 /* ExposureOperation.swift */,
 				5C3AB383344DD3F2FD7E49C05BC8D711 /* GaussianBlurOperation.swift */,
@@ -334,6 +337,9 @@
 					1DA5EB307B1B875907225A378135FBF4 = {
 						LastSwiftMigration = 0800;
 					};
+					68C54CC9BCF31ECBFD3B4507EE2E60AA = {
+						LastSwiftMigration = 0800;
+					};
 				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -361,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				418654E1219B24CF8DBB0335B687EC47 /* ColorControlsOperation.swift in Sources */,
+				195A4C291DB35ACF009CBD04 /* ScaleOperation.swift in Sources */,
 				58DA91759839B4A08A9661885A26DF6D /* ExposureOperation.swift in Sources */,
 				9447F514F28D51C5CF828C3700895AC1 /* GaussianBlurOperation.swift in Sources */,
 				2A9057543C4A20D2C6A19328E1B18D6B /* HueOperation.swift in Sources */,
@@ -447,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80512D63466507496E570DF4C8C204B6 /* Pods-TabataDev.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -476,6 +484,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -485,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F8AC45191098C4929BD688EE218999C6 /* Pods-TabataDev.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -513,6 +523,7 @@
 				PRODUCT_NAME = Pods_TabataDev;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};

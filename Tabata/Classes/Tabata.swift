@@ -40,6 +40,13 @@ open class Tabata {
         return self
     }
     
+    open func scale(_ scale: Float?) -> Tabata {
+        if let scale = scale {
+            operations.append(ScaleOperation(scale: scale))
+        }
+        return self
+    }
+    
     open func process(image: NSImage) -> NSImage {
         if operations.count == 0 {
             return image

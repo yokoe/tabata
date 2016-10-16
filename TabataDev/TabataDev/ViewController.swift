@@ -17,7 +17,7 @@ class ViewController: NSViewController {
 
         // Do any additional setup after loading the view.
         
-        imageView.image = Tabata().exposure(1).process(image: NSImage(named: "Kyoto")!)
+        imageView.image = Tabata().scale(0.1).process(image: NSImage(named: "Kyoto")!)
     }
 
     override var representedObject: Any? {

@@ -46,6 +46,11 @@ Tabata().gaussianBlur(10)
 Tabata().tiltShift(4)
 ```
 
+### Scale
+```
+Tabata().scale(0.5)
+```
+
 ## Requirements
 
 ## Installation
