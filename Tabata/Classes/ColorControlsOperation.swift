@@ -26,7 +26,7 @@ class ColorControlsOperation: NSObject {
     }
     
     override var debugDescription: String {
-        return "<ColorControlsOperation \(brightness), \(contrast)>"
+        return "<ColorControlsOperation \(brightness ?? -1), \(contrast ?? -1)>"
     }
 }
 
