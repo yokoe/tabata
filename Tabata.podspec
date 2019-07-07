@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Tabata'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A lightweight CIFilter wrapper for Mac apps.'
 
 # This description is used to generate tags and improve search results.
@@ -40,4 +40,5 @@ Automatically skips filters which have no effect in specified params.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'Cocoa'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.swift_versions = ["4.2"]
 end
